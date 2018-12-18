@@ -47,8 +47,6 @@ _load_settings "$HOME/.zsh/configs"
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-if
-
 if [ -f ~/.bash_functions ]; then
    . ~/.bash_functions
 fi
@@ -57,4 +55,3 @@ fi
 if [ -f ~/.bash_env_extras_craft ]; then
    . ~/.bash_env_extras_craft
 fi
-
