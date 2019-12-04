@@ -55,3 +55,6 @@ fi
 if [ -f ~/.bash_env_extras_craft ]; then
    . ~/.bash_env_extras_craft
 fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
