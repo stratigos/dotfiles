@@ -4,6 +4,19 @@
   default = current
 [color]
   ui = auto
+[color "status"]
+  added = green
+  changed = red bold
+  untracked = white bold
+[color "branch"]
+  current = blue reverse
+  local = blue
+  remote = cyan dim
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red dim
+  new = blue bold
 [alias]
   aa = add --all
   ap = add --patch
@@ -12,6 +25,7 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  logs = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
@@ -27,3 +41,6 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+	email = techarchist@gmail.com
+	name = Todd Morningstar
